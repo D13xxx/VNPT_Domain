@@ -1,0 +1,79 @@
+.sale-us {
+  width: 100%;
+  height: auto;
+  background: url("../images/bk-uu-dai.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%; }
+  @media (max-width: 1200px) {
+    .sale-us {
+      background: #fff; } }
+  .sale-us .container {
+    padding: 50px 0px;
+    height: auto;
+    background-color: #fff;
+    background-image: url("../images/sale-us-2.png");
+    background-repeat: no-repeat;
+    background-size: 35% 100%; }
+    @media (max-width: 1200px) {
+      .sale-us .container {
+        background: #fff;
+        padding: 30px 0px; } }
+  .sale-us .row .container .sale-title h4 {
+    color: white;
+    font-size: 32px; }
+    .sale-us .row .container .sale-title h4 img {
+      width: 15px; }
+  .sale-us .row .container .sale-title p {
+    font-size: 25px;
+    color: white; }
+  .sale-us .row .container .articles {
+    width: 100%;
+    height: auto;
+    z-index: 100; }
+    .sale-us .row .container .articles .articles-new {
+      border-radius: 20px;
+      width: 35%;
+      background: #ffff;
+      float: left; }
+      .sale-us .row .container .articles .articles-new .image img {
+        width: 100%; }
+      .sale-us .row .container .articles .articles-new .content {
+        padding: 15px; }
+        .sale-us .row .container .articles .articles-new .content a {
+          font-size: 15px;
+          color: #2f2f2f;
+          font-weight: bold; }
+        .sale-us .row .container .articles .articles-new .content p {
+          font-size: 13px;
+          color: #909090;
+          margin-top: 15px; }
+        .sale-us .row .container .articles .articles-new .content a.links {
+          background: #3b83d0;
+          padding: 5px 23px;
+          border-radius: 10px;
+          color: #ffff;
+          margin-bottom: 15px; }
+    .sale-us .row .container .articles .slide-articles {
+      width: 65%;
+      float: right;
+      height: 500px;
+      z-index: 100; }
+      .sale-us .row .container .articles .slide-articles .silde_product .item .articles-box {
+        width: 50%;
+        padding: 0px 10px;
+        border-radius: 10px;
+        position: relative;
+        -webkit-box-shadow: 2px;
+                box-shadow: 2px; }
+        .sale-us .row .container .articles .slide-articles .silde_product .item .articles-box .content {
+          position: absolute;
+          padding: 15px; }
+      .sale-us .row .container .articles .slide-articles .silde_product .item .one {
+        background: url("../images/articles-1.png");
+        overflow: hidden; }
+      .sale-us .row .container .articles .slide-articles .silde_product .item .two {
+        background: url("../images/articles-1.png"); }
+      .sale-us .row .container .articles .slide-articles .silde_product .item .three {
+        background: url("../images/articles-1.png"); }
+      .sale-us .row .container .articles .slide-articles .silde_product .item .four {
+        background: url("../images/articles-1.png"); }

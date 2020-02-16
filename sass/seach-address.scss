@@ -1,0 +1,158 @@
+.gmap {
+  width: 100%;
+  background: #e5e5e5;
+  padding-top: 30px;
+  form {
+    position: relative;
+    width: 80%;
+    margin: 0 auto 30px auto;
+	@media(max-width:768px) {
+		width: 100%;
+	}
+    p {
+      width: 100%;
+      height: 50px;
+      padding: 12px;
+      font-size: 18px;
+      box-shadow: 6px 5px 10px 1px #938b8ba6;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background-color: #fff;
+      color: #2f2f2f;
+      font-weight: bold;
+      span {
+        color: #00a0e4;
+      }
+    }
+    select {
+      position: absolute;
+      padding: 30px 0px;
+      right: 0px;
+      top: 0px;
+      height: 50px;
+      border: 0px;
+      background-color: #4285ea;
+      background-image: url("../images/select-icon.jpg");
+      background-size: 30px;
+      background-position-x: 100%;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      font-size: 20px;
+      padding: 0px 20px;
+      width: 35%;
+      color: white;
+      font-size: 15px;
+      border-radius: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      outline: none;
+	  -webkit-appearance: none;
+	  @media(max-width:768px) {
+		  width: 100%;
+		  border-radius: 5px;
+	  }
+      option {
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+        color: #ffff;
+      }
+    }
+  }
+
+  .content-map {
+    position: relative;
+    width: 100%;
+    height: 450px;
+	z-index: 0;
+	@media(max-width: 768px){
+		height: 800px;
+	}
+	.location {
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		right: 0px;
+		z-index: 99;
+		@media(max-width: 768px){
+			position: relative;
+			top: 0;
+		}
+		.card {
+			width: 300px;
+			height: 350px;
+			border-radius: 20px;
+			background: #fff;
+			padding-bottom: 10px;
+			display: flex;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			min-width: 0;
+			word-wrap: break-word;
+			@media(max-width: 768px){
+				width:100%;
+			}
+		}
+		.card-text {
+			background: #00abe9;
+			padding: 15px;
+			color: #fff;
+			font-size: 16px;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			text-align: center;
+			font-weight: bold; 
+		}
+		.card-body {
+			overflow-y: scroll;
+			padding: 8px;
+			ul.box-list-ch > li {
+				padding: 10px 7px;
+				cursor: pointer;
+				color: #000;
+			}
+
+			ul.box-list-ch > li.active {
+				color: #c6168d;
+			}
+			ul.box-list-ch > li:before {
+				content: '';
+				display: inline-block;
+				background: url(../images/map-pin-blue.png);
+				width: 18px;
+				height: 25px;
+				background-size: 100% 100%;
+				vertical-align: middle;
+				margin-right: 15px;
+			}
+			ul.box-list-ch > li.active:before {
+				content: '';
+				display: inline-block;
+				background: url(../images/map-pin.png);
+				width: 18px;
+				height: 25px;
+				background-size: 100% 100%;
+				vertical-align: middle;
+				margin-right: 15px;
+			}
+			ul.box-list-ch > li > .ch-item {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: initial;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: elipssis;
+				max-width: calc(100% - 38px);
+				pointer-events: none;
+				font-size: 15px;
+			}
+		}
+		
+	}
+	#g-map {
+		overflow: scroll;
+		height: 450px;
+	}
+  }
+}
